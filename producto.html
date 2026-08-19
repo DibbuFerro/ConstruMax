@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cemento Portland Normal 50kg — CONSTRUMAX Corralón</title>
+  <meta name="description" content="Cemento Portland Normal Loma Negra 50kg. Disponible en stock. Precio actualizado. Consultar delivery a obra.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Page-specific overrides */
+    .related-section { background: var(--bg-white); }
+    .info-alert {
+      background: rgba(37,99,235,0.05);
+      border: 1px solid rgba(37,99,235,0.15);
+      border-radius: var(--r-md);
+      padding: 0.75rem 1rem;
+      font-size: 0.78rem;
+      color: #1d4ed8;
+      display: flex; align-items: flex-start; gap: 0.6rem;
+    }
+    .info-alert svg { flex-shrink: 0; margin-top: 1px; }
+
+    .delivery-row {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8rem;
+    }
+    .delivery-row:last-child { border-bottom: none; }
+    .delivery-icon { color: var(--ok); flex-shrink: 0; }
+
+    .calc-box {
+      background: var(--bg-subtle);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 1.25rem;
+    }
+    .calc-box-title {
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--txt-3); margin-bottom: 0.85rem;
+    }
+    .calc-result {
+      background: var(--orange-bg); border: 1px solid var(--orange-border);
+      border-radius: var(--r-md); padding: 0.75rem 1rem;
+      margin-top: 0.75rem; font-size: 0.85rem; color: var(--orange);
+      font-weight: 600; text-align: center;
+    }
+    .share-btn {
+      width: 34px; height: 34px; border-radius: 50%;
+      border: 1.5px solid var(--border); background: var(--bg-white);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--txt-2); cursor: pointer;
+      transition: all var(--t-fast);
+    }
+    .share-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+    @media (min-width: 992px) {
+      .sticky-info { position: sticky; top: 110px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════ TOP BAR ══════════════════════ -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <a href="#"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:-1px;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Av. San Martín 2847, Villa del Parque, CABA</a>
+          <span class="top-bar-divider"></span>
+          <span>Lun–Vie <span class="accent">7:30–18:30</span> · Sáb <span class="accent">7:30–13:00</span></span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="tel:+541148000000"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:-1px;margin-right:3px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+54 11 4800-0000</a>
+          <span class="top-bar-divider"></span>
+          <a href="#">Envíos y Retiro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ MAIN HEADER ═══════════════════ -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-row-1">
+        <a class="site-logo" href="index.html">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <div class="logo-text">CONSTRUMAX<span>.</span></div>
+            <div style="font-size:0.58rem; color:var(--txt-3); letter-spacing:0.1em; font-weight:500; text-transform:uppercase; margin-top:-2px;">Corralón &amp; Materiales</div>
+          </div>
+        </a>
+        <div class="header-search">
+          <select class="search-cat-select">
+            <option>Todas las categorías</option>
+            <option selected>Materiales</option>
+            <option>Hierro y Acero</option>
+            <option>Pinturas</option>
+            <option>Herramientas</option>
+          </select>
+          <input type="search" class="search-input" placeholder="Buscar productos, marcas, códigos SKU...">
+          <button class="search-btn" type="submit" aria-label="Buscar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+        <div class="header-contact d-none d-lg-flex">
+          <a href="https://wa.me/5491148000000" class="whatsapp-btn" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <span>Consultar por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="cat-bar">
+      <div class="container">
+        <ul class="cat-nav">
+          <li class="cat-nav-item"><button class="cat-nav-link todo-btn" onclick="window.location='index.html'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>Todas las categorías</button></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link active">Materiales</a></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link">Hierro y Acero</a></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link">Pisos y Rev.</a></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link">Pinturas</a></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link">Herramientas</a></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link">Sanitarios</a></li>
+          <li class="cat-nav-item"><a href="productos.html" class="cat-nav-link">Electricidad</a></li>
+          <li class="cat-nav-item ms-auto"><a href="productos.html" class="cat-nav-link ofertas-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Ofertas</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════ BREADCRUMB ═══════════════════ -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb-custom" aria-label="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span class="sep">›</span>
+        <a href="productos.html">Materiales de Construcción</a>
+        <span class="sep">›</span>
+        <a href="productos.html">Cemento y Cal</a>
+        <span class="sep">›</span>
+        <span class="current">Cemento Portland Normal 50kg — Loma Negra</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ PRODUCT DETAIL ═══════════════ -->
+  <div class="container py-4">
+    <div class="row g-4">
+
+      <!-- ── GALLERY ── -->
+      <div class="col-lg-5">
+        <div class="detail-main-img">
+          <img src="https://picsum.photos/seed/det_cemento/800/800" alt="Cemento Portland Normal Loma Negra 50kg" id="mainImg">
+        </div>
+        <div class="detail-thumbs">
+          <div class="d-thumb active" onclick="switchImg(this, 'https://picsum.photos/seed/det_cemento/800/800')">
+            <img src="https://picsum.photos/seed/det_cemento/200/200" alt="Vista 1">
+          </div>
+          <div class="d-thumb" onclick="switchImg(this, 'https://picsum.photos/seed/det_cem2/800/800')">
+            <img src="https://picsum.photos/seed/det_cem2/200/200" alt="Vista 2">
+          </div>
+          <div class="d-thumb" onclick="switchImg(this, 'https://picsum.photos/seed/det_cem3/800/800')">
+            <img src="https://picsum.photos/seed/det_cem3/200/200" alt="Vista 3">
+          </div>
+          <div class="d-thumb" onclick="switchImg(this, 'https://picsum.photos/seed/det_cem4/800/800')">
+            <img src="https://picsum.photos/seed/det_cem4/200/200" alt="Vista 4">
+          </div>
+        </div>
+
+        <!-- Ficha técnica rápida (bajo la galería, solo desktop) -->
+        <div class="d-none d-lg-block mt-3">
+          <div class="calc-box">
+            <div class="calc-box-title">Calculadora de cantidad</div>
+            <div class="row g-2 align-items-end">
+              <div class="col-6">
+                <label style="font-size:0.72rem; color:var(--txt-2); font-weight:500; display:block; margin-bottom:0.3rem;">Superficie (m²)</label>
+                <input type="number" id="calcM2" class="price-input" style="width:100%;" placeholder="Ej: 50" oninput="calcCement()">
+              </div>
+              <div class="col-6">
+                <label style="font-size:0.72rem; color:var(--txt-2); font-weight:500; display:block; margin-bottom:0.3rem;">Espesor (cm)</label>
+                <input type="number" id="calcCm" class="price-input" style="width:100%;" placeholder="Ej: 15" oninput="calcCement()">
+              </div>
+            </div>
+            <div class="calc-result" id="calcResult" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PRODUCT INFO ── -->
+      <div class="col-lg-7">
+        <div class="sticky-info">
+
+          <!-- Header -->
+          <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+            <div>
+              <div class="detail-brand">Loma Negra</div>
+              <h1 class="detail-name">Cemento Portland Normal</h1>
+              <p class="detail-sku">SKU: CEM-LN-50 · Código IRAM: CP-40</p>
+            </div>
+            <div class="d-flex gap-2 flex-shrink-0">
+              <button class="share-btn" title="Compartir" onclick="shareProduct()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Stock status -->
+          <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+            <span class="stock-badge stock-ok" style="font-size:0.8rem;">Disponible</span>
+            <span style="font-size:0.78rem; color:var(--txt-2);">
+              <strong style="color:var(--ok);">+500 bolsas</strong> en stock · Actualizado hoy
+            </span>
+          </div>
+
+          <!-- Price box -->
+          <div class="detail-price-box">
+            <div class="d-flex align-items-end gap-3 flex-wrap">
+              <div>
+                <div class="detail-price"><sup>$</sup>3.850</div>
+                <div class="detail-price-unit">por bolsa 50 kg · IVA incluido</div>
+              </div>
+              <div style="border-left: 1.5px solid var(--border); padding-left: 1rem;">
+                <div style="font-size: 0.72rem; color: var(--txt-3); margin-bottom: 0.15rem;">Precio x palé (42 bolsas)</div>
+                <div style="font-size: 1.2rem; font-weight: 800; color: var(--orange); letter-spacing: -0.02em;">$3.580 <span style="font-size:0.7rem; font-weight:400; color:var(--txt-3);">/ bolsa</span></div>
+                <div style="font-size: 0.68rem; color: var(--ok); font-weight: 600;">Ahorrás $11.340 por palé</div>
+              </div>
+            </div>
+            <div class="detail-price-note mt-2">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:-1px;margin-right:3px;color:var(--warn);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Precios sujetos a actualización. Consultá vigencia antes de retirar.
+            </div>
+          </div>
+
+          <!-- Quantity + CTA -->
+          <div class="d-flex align-items-center gap-3 flex-wrap my-3">
+            <div>
+              <label style="font-size:0.7rem; font-weight:600; color:var(--txt-2); letter-spacing:0.08em; text-transform:uppercase; display:block; margin-bottom:0.4rem;">Cantidad</label>
+              <div class="qty-selector">
+                <button class="qty-btn" onclick="changeQty(-1)">−</button>
+                <input type="number" class="qty-input" id="qty" value="10" min="1">
+                <button class="qty-btn" onclick="changeQty(1)">+</button>
+              </div>
+            </div>
+            <div style="font-size:0.72rem; color:var(--txt-3);">
+              Subtotal: <strong id="subtotal" style="color:var(--navy); font-size:1rem;">$38.500</strong>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="d-flex flex-column gap-2 mb-3">
+            <a href="https://wa.me/5491148000000?text=Hola%2C%20quiero%20consultar%20disponibilidad%20de%20Cemento%20Portland%20Normal%2050kg%20(SKU%3A%20CEM-LN-50)" class="btn-primary justify-content-center text-center" target="_blank" style="padding: 0.88rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              Consultar disponibilidad por WhatsApp
+            </a>
+            <a href="tel:+541148000000" class="btn-secondary justify-content-center text-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Llamar: +54 11 4800-0000
+            </a>
+          </div>
+
+          <!-- Info alert -->
+          <div class="info-alert mb-3">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span>Este sitio es de <strong>referencia de stock y precios</strong>. La compra se concreta en el local o por WhatsApp. Los precios se actualizan diariamente.</span>
+          </div>
+
+          <!-- Delivery info -->
+          <div style="background: var(--bg-white); border: 1.5px solid var(--border); border-radius: var(--r-lg); padding: 1rem 1.2rem;">
+            <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--txt-3); margin-bottom:0.5rem;">Retiro y Entrega</div>
+            <div class="delivery-row">
+              <svg class="delivery-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <div>
+                <div style="font-weight:600; color:var(--navy);">Retiro en local</div>
+                <div style="font-size:0.72rem; color:var(--txt-2);">Av. San Martín 2847, Villa del Parque · Hoy de 7:30 a 18:30hs</div>
+              </div>
+            </div>
+            <div class="delivery-row">
+              <svg class="delivery-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <div>
+                <div style="font-weight:600; color:var(--navy);">Delivery a obra</div>
+                <div style="font-size:0.72rem; color:var(--txt-2);">CABA y GBA · Mín. 1 palé (42 bolsas) · Consultar fecha</div>
+              </div>
+            </div>
+            <div class="delivery-row">
+              <svg class="delivery-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <div>
+                <div style="font-weight:600; color:var(--navy);">Flete especial</div>
+                <div style="font-size:0.72rem; color:var(--txt-2);">Interior Buenos Aires · Consultar disponibilidad y costo</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /sticky-info -->
+      </div><!-- /col-lg-7 -->
+    </div><!-- /row -->
+
+    <!-- ─── TABS SECTION ─────────────────────────────────── -->
+    <div class="mt-5">
+      <div class="d-tabs">
+        <button class="d-tab active" onclick="switchTab(this,'t-desc')">Descripción</button>
+        <button class="d-tab" onclick="switchTab(this,'t-specs')">Especificaciones</button>
+        <button class="d-tab" onclick="switchTab(this,'t-uso')">Modo de Uso</button>
+        <button class="d-tab" onclick="switchTab(this,'t-ficha')">Ficha Técnica</button>
+      </div>
+
+      <!-- Descripción -->
+      <div class="d-pane active" id="t-desc">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-7">
+            <h3 style="font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:1rem;">Cemento Portland Normal — CP-40</h3>
+            <p style="color:var(--txt-2); line-height:1.8; font-size:0.9rem; margin-bottom:1rem;">
+              El Cemento Portland Normal de Loma Negra es el producto de referencia para la construcción argentina. Con más de 90 años de trayectoria, es el cemento más utilizado en obras civiles, mampostería, estructuras y hormigones en general.
+            </p>
+            <p style="color:var(--txt-2); line-height:1.8; font-size:0.9rem; margin-bottom:1rem;">
+              Cumple con la norma IRAM 50000 y está certificado por el INTI. Su resistencia a compresión a 28 días supera los 40 MPa, siendo apto para hormigones estructurales H-17 a H-30 y superiores cuando se combina con aditivos adecuados.
+            </p>
+            <p style="color:var(--txt-2); line-height:1.8; font-size:0.9rem;">
+              La presentación en bolsas de 50 kg con film resistente al agua protege el material durante su almacenamiento y transporte, garantizando la calidad del producto hasta su uso en obra.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6">
+                <div style="background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-md); padding:1rem;">
+                  <div style="font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--txt-3); margin-bottom:0.5rem;">Usos principales</div>
+                  <ul style="font-size:0.8rem; color:var(--txt-2); line-height:1.75; padding-left:1.1rem; margin:0;">
+                    <li>Hormigón armado (vigas, losas, columnas)</li>
+                    <li>Mampostería y muros</li>
+                    <li>Revoques y reparaciones</li>
+                    <li>Contrapisos y solados</li>
+                    <li>Carpetas nivelantes</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div style="background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-md); padding:1rem;">
+                  <div style="font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--txt-3); margin-bottom:0.5rem;">Ventajas del producto</div>
+                  <ul style="font-size:0.8rem; color:var(--txt-2); line-height:1.75; padding-left:1.1rem; margin:0;">
+                    <li>Alta resistencia y durabilidad</li>
+                    <li>Certificado IRAM / INTI</li>
+                    <li>Bolsa resistente a la humedad</li>
+                    <li>Consistencia de calidad lote a lote</li>
+                    <li>Compatible con todos los aditivos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div style="border-radius:var(--r-lg); overflow:hidden; border:1.5px solid var(--border);">
+              <img src="https://picsum.photos/seed/cem_uso/700/480" alt="Uso del cemento en obra" style="width:100%; filter:saturate(0.8);">
+            </div>
+            <div style="margin-top:1rem; padding:1rem; background:var(--ok-bg); border:1px solid var(--ok-border); border-radius:var(--r-md);">
+              <div style="font-size:0.75rem; font-weight:700; color:var(--ok); margin-bottom:0.4rem; display:flex; align-items:center; gap:0.4rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Certificación vigente
+              </div>
+              <p style="font-size:0.75rem; color:var(--txt-2); margin:0; line-height:1.6;">Norma IRAM 50000. Certificado INTI Nº 012345. Resistencia mínima garantizada a 28 días: 40 MPa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Especificaciones -->
+      <div class="d-pane" id="t-specs">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 style="font-size:0.9rem; font-weight:700; color:var(--navy); margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.06em;">Datos del Producto</h3>
+            <div class="specs-grid">
+              <div class="spec-row"><div class="spec-key">Marca</div><div class="spec-val">Loma Negra</div></div>
+              <div class="spec-row"><div class="spec-key">SKU</div><div class="spec-val">CEM-LN-50</div></div>
+              <div class="spec-row"><div class="spec-key">Código IRAM</div><div class="spec-val">CP-40</div></div>
+              <div class="spec-row"><div class="spec-key">Tipo</div><div class="spec-val">Portland Normal</div></div>
+              <div class="spec-row"><div class="spec-key">Presentación</div><div class="spec-val">Bolsa 50 kg</div></div>
+              <div class="spec-row"><div class="spec-key">Palé</div><div class="spec-val">42 bolsas (2.100 kg)</div></div>
+              <div class="spec-row"><div class="spec-key">Norma</div><div class="spec-val">IRAM 50000</div></div>
+              <div class="spec-row"><div class="spec-key">País de origen</div><div class="spec-val">Argentina</div></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 style="font-size:0.9rem; font-weight:700; color:var(--navy); margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.06em;">Propiedades Técnicas</h3>
+            <div class="specs-grid">
+              <div class="spec-row"><div class="spec-key">Resistencia 3 días</div><div class="spec-val">≥ 10 MPa</div></div>
+              <div class="spec-row"><div class="spec-key">Resistencia 7 días</div><div class="spec-val">≥ 24 MPa</div></div>
+              <div class="spec-row"><div class="spec-key">Resistencia 28 días</div><div class="spec-val">≥ 40 MPa</div></div>
+              <div class="spec-row"><div class="spec-key">Inicio de fraguado</div><div class="spec-val">≥ 45 minutos</div></div>
+              <div class="spec-row"><div class="spec-key">Fin de fraguado</div><div class="spec-val">≤ 10 horas</div></div>
+              <div class="spec-row"><div class="spec-key">Expansión en autoclave</div><div class="spec-val">≤ 0,80%</div></div>
+              <div class="spec-row"><div class="spec-key">Superficie específica</div><div class="spec-val">≥ 280 m²/kg</div></div>
+              <div class="spec-row"><div class="spec-key">Almacenamiento</div><div class="spec-val">Lugar seco, máx. 3 meses</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modo de uso -->
+      <div class="d-pane" id="t-uso">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="d-flex flex-column gap-3">
+              <div style="display:flex; gap:1rem; padding:1rem; background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-md);">
+                <div style="width:32px; height:32px; background:var(--orange); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.82rem; font-weight:800; flex-shrink:0;">1</div>
+                <div>
+                  <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.3rem;">Preparación de la mezcla seca</div>
+                  <p style="font-size:0.8rem; color:var(--txt-2); line-height:1.7; margin:0;">Mezclar primero los áridos secos (arena, piedra) con el cemento hasta obtener un color uniforme. Proporciones recomendadas: 1 parte cemento / 3 partes arena / 3 partes piedra para hormigón H-17.</p>
+                </div>
+              </div>
+              <div style="display:flex; gap:1rem; padding:1rem; background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-md);">
+                <div style="width:32px; height:32px; background:var(--orange); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.82rem; font-weight:800; flex-shrink:0;">2</div>
+                <div>
+                  <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.3rem;">Incorporación del agua</div>
+                  <p style="font-size:0.8rem; color:var(--txt-2); line-height:1.7; margin:0;">Agregar agua limpia gradualmente hasta obtener la consistencia deseada. Relación agua/cemento recomendada: 0.45 a 0.55. Menor cantidad de agua = mayor resistencia. No usar agua con sales o impurezas.</p>
+                </div>
+              </div>
+              <div style="display:flex; gap:1rem; padding:1rem; background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-md);">
+                <div style="width:32px; height:32px; background:var(--orange); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.82rem; font-weight:800; flex-shrink:0;">3</div>
+                <div>
+                  <div style="font-weight:700; color:var(--navy); font-size:0.88rem; margin-bottom:0.3rem;">Colocación y curado</div>
+                  <p style="font-size:0.8rem; color:var(--txt-2); line-height:1.7; margin:0;">Colocar la mezcla dentro del tiempo de trabajabilidad (aprox. 90 min. a 20°C). Curar con agua por 7 días mínimo para garantizar resistencia máxima. Proteger de temperaturas extremas durante el fraguado.</p>
+                </div>
+              </div>
+              <div style="padding:1rem; background:rgba(217,119,6,0.06); border:1px solid rgba(217,119,6,0.2); border-radius:var(--r-md);">
+                <div style="font-size:0.78rem; font-weight:700; color:var(--warn); display:flex; align-items:center; gap:0.4rem; margin-bottom:0.4rem;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  Precauciones
+                </div>
+                <p style="font-size:0.78rem; color:var(--txt-2); margin:0; line-height:1.65;">Usar guantes y protección ocular al manipular. El cemento es alcalino y puede causar irritación. Almacenar en lugar seco, alejado del suelo y sobre tarimas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div style="background:var(--navy); border-radius:var(--r-lg); padding:1.5rem; color:white;">
+              <div style="font-size:0.68rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:1rem;">Rendimiento estimado</div>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <div style="font-size:1.5rem; font-weight:800; color:var(--orange); letter-spacing:-0.02em;">7 bolsas</div>
+                  <div style="font-size:0.72rem; color:rgba(255,255,255,0.55);">por m³ de hormigón H-17</div>
+                </div>
+                <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:0.85rem;">
+                  <div style="font-size:1.5rem; font-weight:800; color:var(--orange); letter-spacing:-0.02em;">4 bolsas</div>
+                  <div style="font-size:0.72rem; color:rgba(255,255,255,0.55);">por m³ de revoque fino</div>
+                </div>
+                <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:0.85rem;">
+                  <div style="font-size:1.5rem; font-weight:800; color:var(--orange); letter-spacing:-0.02em;">5 bolsas</div>
+                  <div style="font-size:0.72rem; color:rgba(255,255,255,0.55);">por m³ de contrapiso</div>
+                </div>
+              </div>
+              <p style="font-size:0.68rem; color:rgba(255,255,255,0.3); margin-top:1rem; margin-bottom:0; line-height:1.6;">Los rendimientos son aproximados y pueden variar según las proporciones usadas, calidad de áridos y condiciones de obra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha técnica -->
+      <div class="d-pane" id="t-ficha">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-6">
+            <div style="background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-lg); padding:2rem; text-align:center;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" style="margin-bottom:1rem;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <div style="font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:0.35rem;">Ficha Técnica PDF</div>
+              <p style="font-size:0.8rem; color:var(--txt-2); margin-bottom:1.25rem; line-height:1.6;">Descargá la ficha técnica completa con especificaciones, dosificaciones y tabla de resistencias del Cemento Portland Normal CP-40.</p>
+              <a href="#" class="btn-primary justify-content-center" onclick="alert('En producción este botón descarga el PDF oficial de la marca.')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar Ficha Técnica
+              </a>
+              <p style="font-size:0.68rem; color:var(--txt-3); margin-top:0.75rem; margin-bottom:0;">PDF · 248 KB · Loma Negra S.A.I.C.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div style="background:var(--bg-subtle); border:1.5px solid var(--border); border-radius:var(--r-lg); padding:2rem; text-align:center;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" style="margin-bottom:1rem;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <div style="font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:0.35rem;">Hoja de Seguridad (MSDS)</div>
+              <p style="font-size:0.8rem; color:var(--txt-2); margin-bottom:1.25rem; line-height:1.6;">Hoja de datos de seguridad con información sobre manejo, almacenamiento, EPP requerido y primeros auxilios.</p>
+              <a href="#" class="btn-secondary justify-content-center" onclick="alert('En producción este botón descarga el MSDS oficial.')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar MSDS
+              </a>
+              <p style="font-size:0.68rem; color:var(--txt-3); margin-top:0.75rem; margin-bottom:0;">PDF · 185 KB · Norma IRAM 2507</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tabs -->
+  </div>
+
+  <!-- ═══════════════════════ RELATED PRODUCTS ═════════════ -->
+  <section class="related-section sec mt-3">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title">Productos Relacionados</div>
+        <a href="productos.html" class="section-link">Ver todos en Materiales <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="row g-3">
+
+        <div class="col-sm-6 col-lg-3">
+          <a href="producto.html" class="prod-card">
+            <div class="prod-img">
+              <img src="https://picsum.photos/seed/rel_cem25/600/450" alt="Cemento 25kg">
+              <div class="prod-img-badges"><span class="stock-badge stock-ok">Disponible</span><span class="sku-badge">CEM-LN-25</span></div>
+            </div>
+            <div class="prod-body">
+              <div class="prod-brand">Loma Negra</div>
+              <div class="prod-name">Cemento Portland Normal 25kg</div>
+              <div class="prod-unit">Stock: +300 bolsas</div>
+              <div class="prod-footer">
+                <div><div class="prod-price"><sup>$</sup>2.100<span class="prod-price-unit">/bolsa</span></div></div>
+                <span class="btn-detail">Ver detalle</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <a href="producto.html" class="prod-card">
+            <div class="prod-img">
+              <img src="https://picsum.photos/seed/rel_holcim/600/450" alt="Cemento Holcim">
+              <div class="prod-img-badges"><span class="stock-badge stock-ok">Disponible</span><span class="sku-badge">CEM-HC-50</span></div>
+            </div>
+            <div class="prod-body">
+              <div class="prod-brand">Holcim</div>
+              <div class="prod-name">Cemento Fuerte Forte 50kg</div>
+              <div class="prod-unit">Stock: +200 bolsas</div>
+              <div class="prod-footer">
+                <div><div class="prod-price"><sup>$</sup>4.100<span class="prod-price-unit">/bolsa</span></div></div>
+                <span class="btn-detail">Ver detalle</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <a href="producto.html" class="prod-card">
+            <div class="prod-img">
+              <img src="https://picsum.photos/seed/rel_cal/600/450" alt="Cal Hidráulica">
+              <div class="prod-img-badges"><span class="stock-badge stock-ok">Disponible</span><span class="sku-badge">CAL-HD-30</span></div>
+            </div>
+            <div class="prod-body">
+              <div class="prod-brand">Cementos Avellaneda</div>
+              <div class="prod-name">Cal Hidráulica Blanca 30kg</div>
+              <div class="prod-unit">Stock: +150 bolsas</div>
+              <div class="prod-footer">
+                <div><div class="prod-price"><sup>$</sup>2.450<span class="prod-price-unit">/bolsa</span></div></div>
+                <span class="btn-detail">Ver detalle</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <a href="producto.html" class="prod-card">
+            <div class="prod-img">
+              <img src="https://picsum.photos/seed/rel_mortero/600/450" alt="Mortero Seco">
+              <div class="prod-img-badges"><span class="stock-badge stock-ok">Disponible</span><span class="sku-badge">MOR-PM-30</span></div>
+            </div>
+            <div class="prod-body">
+              <div class="prod-brand">Holcim</div>
+              <div class="prod-name">Mortero Seco Premezclado 30kg</div>
+              <div class="prod-unit">Stock: +200 bolsas</div>
+              <div class="prod-footer">
+                <div><div class="prod-price"><sup>$</sup>1.850<span class="prod-price-unit">/bolsa</span></div></div>
+                <span class="btn-detail">Ver detalle</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer mt-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">CONSTRUMAX<span>.</span></div>
+          <p class="footer-tagline">Corralón y Materiales de Construcción desde 1984 en Villa del Parque, CABA.</p>
+          <div class="footer-social mt-3">
+            <a href="#" class="f-social-btn" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" class="f-social-btn" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="f-social-btn" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-title">Categorías</div>
+          <ul class="footer-links">
+            <li><a href="productos.html">Materiales</a></li>
+            <li><a href="productos.html">Hierro y Acero</a></li>
+            <li><a href="productos.html">Madera</a></li>
+            <li><a href="productos.html">Pisos y Rev.</a></li>
+            <li><a href="productos.html">Pinturas</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-title">Información</div>
+          <ul class="footer-links">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Envíos y Delivery</a></li>
+            <li><a href="#">Formas de Pago</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <div class="footer-title">Contacto</div>
+          <ul class="footer-links">
+            <li><a href="#">Av. San Martín 2847, CABA</a></li>
+            <li><a href="#">Lun–Vie: 7:30 a 18:30hs</a></li>
+            <li><a href="tel:+541148000000">+54 11 4800-0000</a></li>
+            <li><a href="https://wa.me/5491148000000" style="color:#25d366;">WhatsApp: 11 5800-0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 CONSTRUMAX Corralón. Todos los derechos reservados. · CUIT 30-12345678-9</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Gallery thumb switching
+    function switchImg(thumb, src) {
+      document.querySelectorAll('.d-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+      const img = document.getElementById('mainImg');
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.2s';
+      setTimeout(() => { img.src = src; img.style.opacity = '1'; }, 200);
+    }
+
+    // Tabs
+    function switchTab(btn, id) {
+      document.querySelectorAll('.d-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.d-pane').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(id)?.classList.add('active');
+    }
+
+    // Quantity + subtotal
+    function changeQty(delta) {
+      const input = document.getElementById('qty');
+      const val = Math.max(1, parseInt(input.value || 1) + delta);
+      input.value = val;
+      updateSubtotal(val);
+    }
+    document.getElementById('qty').addEventListener('input', function() {
+      updateSubtotal(parseInt(this.value) || 1);
+    });
+    function updateSubtotal(qty) {
+      const price = 3850;
+      document.getElementById('subtotal').textContent = '$' + (price * qty).toLocaleString('es-AR');
+    }
+
+    // Cement calculator
+    function calcCement() {
+      const m2 = parseFloat(document.getElementById('calcM2').value);
+      const cm = parseFloat(document.getElementById('calcCm').value);
+      const res = document.getElementById('calcResult');
+      if (m2 > 0 && cm > 0) {
+        const m3 = m2 * (cm / 100);
+        const bolsas = Math.ceil(m3 * 7);
+        res.style.display = 'block';
+        res.textContent = `≈ ${bolsas} bolsas para ${m2} m² con ${cm} cm de espesor`;
+      } else {
+        res.style.display = 'none';
+      }
+    }
+
+    // Share
+    function shareProduct() {
+      if (navigator.share) {
+        navigator.share({ title: 'Cemento Portland Normal 50kg — CONSTRUMAX', url: window.location.href });
+      } else {
+        navigator.clipboard.writeText(window.location.href)
+          .then(() => alert('Enlace copiado al portapapeles'));
+      }
+    }
+  </script>
+</body>
+</html>
